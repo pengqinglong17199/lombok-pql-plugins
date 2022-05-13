@@ -1,0 +1,36 @@
+<idea-plugin>
+    <id>kfang.agent.lombok-pql-plugins</id>
+    <name>看房网-盘客-Lomgbok插件</name>
+    <vendor email="619776631@qq.com" url="http://www.kfang.com">彭清龙</vendor>
+
+    <description>
+        用于看房网盘客项目组自定义的类lombok组件
+
+        防止生成的方法没有get方法导致idea报错
+
+        agent～
+
+        agent～
+
+        agent～
+
+        agent～
+
+        agent～
+
+        agent～
+
+        agent～
+    </description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <lang.psiAugmentProvider implementation="kfang.agent.lombok.pql.plugins.EnumDescAugmentProvider" />
+    </extensions>
+
+</idea-plugin>
