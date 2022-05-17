@@ -4,25 +4,13 @@
     <vendor email="619776631@qq.com" url="http://www.kfang.com">彭清龙</vendor>
 
     <description>
-        kfang agent commons - be like lombok
-
-        agent～
-
-        agent～
-
-        agent～
-
-        agent～
-
-        agent～
-
-        agent～
-
-        agent～
+        Enhance and expand the Lombok plug-in.
+        Provide enumeration annotations.
+        Automatically generate a get method for enumeration fields in the class.
+        The plug-in is used to add relevant psi to the Intellij idea to solve the problem that the automatically generated get method cannot be recognized.
     </description>
 
-    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
-         on how to target different products -->
+
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.java</depends>

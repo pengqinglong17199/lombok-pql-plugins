@@ -119,7 +119,9 @@ public class EnumDescAugmentProvider extends PsiAugmentProvider {
             if(attributes.size() == 0){
                 String name = String.format("get%s%s", upperCase(fieldName), "Desc");
                 LightMethodBuilder method = createMethod(psiClass, field, name);
-                result.add((Psi)method);
+                if(method != null){
+                    result.add((Psi)method);
+                }
                 continue;
             }
 
