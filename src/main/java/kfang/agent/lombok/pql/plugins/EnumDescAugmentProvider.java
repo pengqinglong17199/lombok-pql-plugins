@@ -96,7 +96,9 @@ public class EnumDescAugmentProvider extends PsiAugmentProvider {
 
             String name = String.format("get%s%s", upperCase(field.getName()), "Desc");
             LightMethodBuilder method = createMethod(psiClass, field, name);
-            result.add((Psi)method);
+            if(method != null) {
+                result.add((Psi) method);
+            }
         }
     }
 
@@ -131,7 +133,9 @@ public class EnumDescAugmentProvider extends PsiAugmentProvider {
 
                 String name = String.format("get%s%s", upperCase(fieldName), upperCase(value));
                 LightMethodBuilder method = createMethod(psiClass, field, name);
-                result.add((Psi)method);
+                if(method != null) {
+                    result.add((Psi) method);
+                }
 
                 continue;
             }
@@ -143,7 +147,9 @@ public class EnumDescAugmentProvider extends PsiAugmentProvider {
                         String value = (String)((JvmAnnotationConstantValue) tempValue).getConstantValue();
                         String name = String.format("get%s%s", upperCase(fieldName), upperCase(value));
                         LightMethodBuilder method = createMethod(psiClass, field, name);
-                        result.add((Psi)method);
+                        if(method != null){
+                            result.add((Psi)method);
+                        }
                     }
                 }
             }

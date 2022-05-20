@@ -9,7 +9,18 @@
         Automatically generate a get method for enumeration fields in the class.
         The plug-in is used to add relevant psi to the Intellij idea to solve the problem that the automatically generated get method cannot be recognized.
     </description>
-
+    <change-notes><![CDATA[
+      <h3>V1.0</h3>
+      <ul>
+          <li>Initial version</li>
+          <li>Support @EnumDesc</li>
+      </ul>
+        <h3>V1.1</h3>
+      <ul>
+          <li>Add compatibility Range 193*</li>
+      </ul>
+      ]]>
+    </change-notes>
 
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.lang</depends>
