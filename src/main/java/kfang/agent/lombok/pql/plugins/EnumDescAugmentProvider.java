@@ -47,12 +47,6 @@ public class EnumDescAugmentProvider extends PsiAugmentProvider {
         log.debug("EnumDescAugmentProvider created");
     }
 
-        @Override
-    @Deprecated
-    protected <Psi extends PsiElement> List<Psi> getAugments(@NotNull PsiElement element, @NotNull Class<Psi> type) {
-        return getAugments(element, type, null);
-    }
-
     @Override
     protected <Psi extends PsiElement> List<Psi> getAugments(@NotNull PsiElement element,
                                                              @NotNull Class<Psi> type,

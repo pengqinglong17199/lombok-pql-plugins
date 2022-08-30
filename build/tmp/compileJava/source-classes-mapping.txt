@@ -1,2 +1,0 @@
-kfang/agent/lombok/pql/plugins/EnumDescAugmentProvider.java
- kfang.agent.lombok.pql.plugins.EnumDescAugmentProvider
